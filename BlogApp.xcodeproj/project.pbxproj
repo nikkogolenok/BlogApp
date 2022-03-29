@@ -19,6 +19,10 @@
 		446F3ABE27F3420100DFA985 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ABD27F3420100DFA985 /* PostViewController.swift */; };
 		446F3AC027F3423500DFA985 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */; };
 		446F3AC227F3426F00DFA985 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */; };
+		446F3AC527F3433500DFA985 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC427F3433500DFA985 /* APIManager.swift */; };
+		446F3AC727F3436000DFA985 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC627F3436000DFA985 /* DatabaseManager.swift */; };
+		446F3AC927F3437900DFA985 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC827F3437900DFA985 /* AuthManager.swift */; };
+		446F3ACB27F3439D00DFA985 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ACA27F3439D00DFA985 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		446F3ABD27F3420100DFA985 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
 		446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		446F3AC427F3433500DFA985 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		446F3AC627F3436000DFA985 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		446F3AC827F3437900DFA985 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		446F3ACA27F3439D00DFA985 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 		446F3A9D27F3390000DFA985 /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				446F3AC327F342D000DFA985 /* Managers */,
 				446F3AB227F3398100DFA985 /* SupportFiles */,
 				446F3AB327F339A700DFA985 /* Controllers */,
 				446F3AB427F339B200DFA985 /* View */,
@@ -107,6 +116,17 @@
 				446F3AA927F3390300DFA985 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		446F3AC327F342D000DFA985 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				446F3AC427F3433500DFA985 /* APIManager.swift */,
+				446F3AC627F3436000DFA985 /* DatabaseManager.swift */,
+				446F3AC827F3437900DFA985 /* AuthManager.swift */,
+				446F3ACA27F3439D00DFA985 /* StorageManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +202,14 @@
 				446F3ABE27F3420100DFA985 /* PostViewController.swift in Sources */,
 				446F3AA327F3390000DFA985 /* HomeViewController.swift in Sources */,
 				446F3ABC27F341D100DFA985 /* SignUpViewController.swift in Sources */,
+				446F3ACB27F3439D00DFA985 /* StorageManager.swift in Sources */,
+				446F3AC927F3437900DFA985 /* AuthManager.swift in Sources */,
 				446F3A9F27F3390000DFA985 /* AppDelegate.swift in Sources */,
+				446F3AC527F3433500DFA985 /* APIManager.swift in Sources */,
 				446F3ABA27F341A300DFA985 /* SignInViewController.swift in Sources */,
 				446F3AC027F3423500DFA985 /* ViewPostViewController.swift in Sources */,
 				446F3AB627F3406600DFA985 /* ProfileViewController.swift in Sources */,
+				446F3AC727F3436000DFA985 /* DatabaseManager.swift in Sources */,
 				446F3AB827F340D600DFA985 /* TabBarViewController.swift in Sources */,
 				446F3AA127F3390000DFA985 /* SceneDelegate.swift in Sources */,
 				446F3AC227F3426F00DFA985 /* CreateNewPostViewController.swift in Sources */,
