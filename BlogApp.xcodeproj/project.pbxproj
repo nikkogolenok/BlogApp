@@ -16,7 +16,6 @@
 		446F3AB827F340D600DFA985 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AB727F340D600DFA985 /* TabBarViewController.swift */; };
 		446F3ABA27F341A300DFA985 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AB927F341A300DFA985 /* SignInViewController.swift */; };
 		446F3ABC27F341D100DFA985 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ABB27F341D100DFA985 /* SignUpViewController.swift */; };
-		446F3ABE27F3420100DFA985 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ABD27F3420100DFA985 /* PostViewController.swift */; };
 		446F3AC027F3423500DFA985 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */; };
 		446F3AC227F3426F00DFA985 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */; };
 		446F3AC527F3433500DFA985 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446F3AC427F3433500DFA985 /* APIManager.swift */; };
@@ -37,7 +36,6 @@
 		446F3AB727F340D600DFA985 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		446F3AB927F341A300DFA985 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		446F3ABB27F341D100DFA985 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		446F3ABD27F3420100DFA985 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
 		446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
 		446F3AC427F3433500DFA985 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -98,14 +96,9 @@
 		446F3AB327F339A700DFA985 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				446F3AA227F3390000DFA985 /* HomeViewController.swift */,
-				446F3AB527F3406600DFA985 /* ProfileViewController.swift */,
-				446F3AB727F340D600DFA985 /* TabBarViewController.swift */,
-				446F3AB927F341A300DFA985 /* SignInViewController.swift */,
-				446F3ABB27F341D100DFA985 /* SignUpViewController.swift */,
-				446F3ABD27F3420100DFA985 /* PostViewController.swift */,
-				446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */,
-				446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */,
+				446F3ACD27F3487300DFA985 /* CoreTabs */,
+				446F3ACC27F3486000DFA985 /* Auth */,
+				446F3ACE27F348EA00DFA985 /* Posts */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +120,34 @@
 				446F3ACA27F3439D00DFA985 /* StorageManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		446F3ACC27F3486000DFA985 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				446F3AB927F341A300DFA985 /* SignInViewController.swift */,
+				446F3ABB27F341D100DFA985 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		446F3ACD27F3487300DFA985 /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+				446F3AA227F3390000DFA985 /* HomeViewController.swift */,
+				446F3AB527F3406600DFA985 /* ProfileViewController.swift */,
+				446F3AB727F340D600DFA985 /* TabBarViewController.swift */,
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		446F3ACE27F348EA00DFA985 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				446F3ABF27F3423500DFA985 /* ViewPostViewController.swift */,
+				446F3AC127F3426F00DFA985 /* CreateNewPostViewController.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				446F3ABE27F3420100DFA985 /* PostViewController.swift in Sources */,
 				446F3AA327F3390000DFA985 /* HomeViewController.swift in Sources */,
 				446F3ABC27F341D100DFA985 /* SignUpViewController.swift in Sources */,
 				446F3ACB27F3439D00DFA985 /* StorageManager.swift in Sources */,
